@@ -1,0 +1,32 @@
+{
+  "name": "offsetwidth",
+  "quokka": {
+    "babel": true
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "jsdom": "^16.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "plugins": [
+    "jsdom-quokka-plugin"
+  ],
+  "jsdom": {
+    "file": "index.html",
+    "html": "...",
+    "userAgent": "quokka.js",
+    "config": {
+      "pretendToBeVisual": true,
+      "runScripts": "dangerously",
+      "url": "http://localhost/"
+    }
+  }
+}
